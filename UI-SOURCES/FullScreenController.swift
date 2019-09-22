@@ -187,8 +187,6 @@ class FullScreenController: UIViewController, QRCodeReaderViewControllerDelegate
             let destinationVC = segue.destination as! MenuController
             destinationVC.ipText = urlString
         }
-        
-        
     }
     
     //MENU BUTTON ON FULL SCREEN

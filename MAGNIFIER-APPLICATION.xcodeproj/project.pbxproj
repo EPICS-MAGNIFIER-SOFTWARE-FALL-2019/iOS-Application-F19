@@ -27,6 +27,7 @@
 		54DB76F52210BB1900AB0AC2 /* SplitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76F02210BB1900AB0AC2 /* SplitController.swift */; };
 		54DB76F62210BB1900AB0AC2 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB76F12210BB1900AB0AC2 /* MenuController.swift */; };
 		54FB8A8C225E67CA00895631 /* EPICS Magnifier Manual.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 54FB8A8B225E67CA00895631 /* EPICS Magnifier Manual.pdf */; };
+		F698506F2325992A002DF07F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F698506E2325992A002DF07F /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		54DB76F02210BB1900AB0AC2 /* SplitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitController.swift; sourceTree = "<group>"; };
 		54DB76F12210BB1900AB0AC2 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		54FB8A8B225E67CA00895631 /* EPICS Magnifier Manual.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "EPICS Magnifier Manual.pdf"; sourceTree = "<group>"; };
+		F698506E2325992A002DF07F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F698506F2325992A002DF07F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +76,7 @@
 				54DB76D62210BB0600AB0AC2 /* QR-SOURCES */,
 				54DB76C32210BAA100AB0AC2 /* MAGNIFIER-APPLICATION */,
 				54DB76C22210BAA100AB0AC2 /* Products */,
+				F698506D2325992A002DF07F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +140,14 @@
 			path = "UI-SOURCES/USER-MANUAL";
 			sourceTree = SOURCE_ROOT;
 		};
+		F698506D2325992A002DF07F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F698506E2325992A002DF07F /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,6 +180,7 @@
 				TargetAttributes = {
 					54DB76C02210BAA100AB0AC2 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -370,15 +383,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 96GW932245;
+				DEVELOPMENT_TEAM = 8SGFC7ZUR6;
 				INFOPLIST_FILE = "MAGNIFIER-APPLICATION/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rosaton.MAGNIFIER-APPLICATION";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stan.MAGNIFIER-APPLICATION";
 				PRODUCT_NAME = "EPICS Magnifier";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -388,15 +401,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 96GW932245;
+				DEVELOPMENT_TEAM = 8SGFC7ZUR6;
 				INFOPLIST_FILE = "MAGNIFIER-APPLICATION/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rosaton.MAGNIFIER-APPLICATION";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stan.MAGNIFIER-APPLICATION";
 				PRODUCT_NAME = "EPICS Magnifier";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;

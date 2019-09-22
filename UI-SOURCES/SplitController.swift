@@ -2,7 +2,7 @@ import UIKit
 import WebKit
 
 class SplitController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIScrollViewDelegate {
-
+ 
     //VAR INITIALIZATIONS
     var sSImage : UIImage?
     var urlText : String?

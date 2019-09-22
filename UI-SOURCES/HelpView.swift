@@ -14,7 +14,6 @@ class HelpView: UIViewController {
         let url = URL(fileURLWithPath: path!)
         let request = URLRequest(url: url)
         helpWebView.load(request)
-        
     }
     
     override func didReceiveMemoryWarning() {
